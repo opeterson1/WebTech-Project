@@ -1,0 +1,7 @@
+About: a website dedicated to piano playing. It will include tabs of songs, recent arrangements that have just been released (audio & video versions), and songs of the week. 
+
+Why is my website important: People will be able to keep up with all of their favorite artists recent releases with the sheet music. 
+
+Target audience: younger piano players looking to listen to and learn versions of modern songs being played on the piano. 
+
+Content on each page: each page will include recent songs released, sheet music, links to youtube channels, links to social media accounts, upcoming shows 
