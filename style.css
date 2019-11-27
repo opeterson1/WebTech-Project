@@ -1,0 +1,23 @@
+ul {
+                display: inline-block;
+                width: 100%;
+                margin: 0;
+                background-color: white;
+                
+
+        }
+
+        li{
+                float:left;
+                list-style-type: none;
+                border: black;
+                font-size: 20px;
+        }
+        /* put breaks inbetween each selector */
+
+        a {
+                text-decoration: none;
+                color: black;
+                padding-left: 50px;
+                padding-right: 50px;
+        }
