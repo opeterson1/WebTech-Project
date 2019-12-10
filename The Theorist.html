@@ -32,6 +32,17 @@
         height: 550px;
     }
 </style>
+<script>
+    function change() {
+        let picture = document.getElementById("theorist1");
+        picture.src = "The-theorist.jpg";
+    }
+
+    function reset() {
+        let picture = document.getElementById("theorist1");
+        picture.src = "The-theorist2.jpg"
+    }
+</script>
 
 <body>
     <!-- Search Bar -->
@@ -43,12 +54,14 @@
         <li> <a href="Lang Lang.html"> Lang Lang</a></li>
         <li> <a href="Contact.html"> Contact Us!</a> </li>
     </ul>
+    <!-- make the background and text change if you mouseover -->
     </br>
     </br>
     <h1> The Theorist </h1></br>
     <div class="profile">
-        <img src="../WebTech/Classwork/Images/The Theorist.jpg" alt="The Theorist" title="The Theorist" height="500"
-            width="500"></br>
+        <img onmouseover="change()" onmouseout="reset()" src="The-theorist2.jpg" alt="The Theorist" title="The Theorist"
+            height="500" width="500" id="theorist1"></br>
+        <!-- mouse over function for picture above -->
         <h3> About the Composer</h3></br>
         <p>
             Henderson Nguyen, better known as The Theorist is a composer, pianist, producer and arranger. His musical
@@ -85,17 +98,15 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZaOlhOLLLnA" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h3>
-        <a href="https://www.thextheorist.com/sheet-music" target="blank">Learn how to play his songs</a>
 
-    </h3>
-    <p>
-        <button><a href="https://www.youtube.com/user/EDxHENDY/videos?view=0&sort=p&flow=grid" target="blank"> Listen to
-                more of
-                his songs on Youtube</a></button>
-        <button><a href="https://soundcloud.com/thextheorist" target="blank"> Listen to more of his songs on
-                SoundCloud</a></button>
-    </p>
+
+    <a href="https://www.thextheorist.com/sheet-music" target="blank">Learn how to play his songs</a>
+
+    <button><a href="https://www.youtube.com/user/EDxHENDY/videos?view=0&sort=p&flow=grid" target="blank"> Listen to
+            more of
+            his songs on Youtube</a></button>
+    <button><a href="https://soundcloud.com/thextheorist" target="blank"> Listen to more of his songs on
+            SoundCloud</a></button>
     <button><a href="Site Map.html" target="blank">Site Navigator</a></button>
     <button><a href="Contact.html" target="blank"> Contact Us!</a></button>
 

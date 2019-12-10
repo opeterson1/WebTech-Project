@@ -8,39 +8,55 @@
         <title>Site Map</title>
 </head>
 <link rel="stylesheet" href="style.css" type="text/css">
+<style>
+        a.nav,
+        a {
+                color: white;
+        }
+
+        a:hover {
+                background-color: white;
+                color: black;
+        }
+        /* change to background to black and text to white once you fix search bar */
+
+        a.button{
+                color: black;
+        }
+
+        /* class this to exclude the buttons at the buttom */
+</style>
+<script>
+        function change() {
+                let honor = document.getElementById("honorcode");
+                honor.innerHTML = "I Owen Peterson pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work I have read the term project instructions and observed all the restrictions and limitations specified therein."
+        }
+</script>
+
 
 <body>
         <!-- Search Bar -->
         <h1>Modern Piano Players.com</h1>
-        <li> <a href="Index.html" target="blank"> Home</a></li>
-        <li> <a href="Constantino Carrara.html" target="blank"> Constantino Carrara</a></li>
-        <li> <a href="The Theorist.html" target="blank"> The Theorist</a></li>
-        <li> <a href="Lang Lang.html" target="blank"> Lang Lang</a></li>
-        <li> <a href="Contact.html" target="blank"> Contact Us!</a> </li>
+        <li> <a class="nav" href="Index.html" target="blank"> Home</a></li>
+        <li> <a class="nav" href="Constantino Carrara.html" target="blank"> Constantino Carrara</a></li>
+        <li> <a class="nav" href="The Theorist.html" target="blank"> The Theorist</a></li>
+        <li> <a class="nav" href="Lang Lang.html" target="blank"> Lang Lang</a></li>
+        <li> <a class="nav" href="Contact.html" target="blank"> Contact Us!</a> </li>
         </br>
-        
-        <caption>Site Map</caption>
-        <a href="Constantino Carrara.html"> <img src="../WebTech/Classwork/Images/Constatino Carrara2.jpg"
-                        alt="Constantino Carrara" title="Constantino Carrara" height="400px" width="400px"></a></li>
-        <a href="Lang Lang.html"> <img src="../WebTech/Classwork/Images/Lang Lang2.png" alt="Lang Lang"
-                        title="Lang Lang" height="400px" width="400px"></a></li>
-        <a href="The Theorist.html"> <img src="../WebTech/Classwork/Images/The theorist 2.jpg" alt="The Theorist"
-                        Title="The Theorist" height="400px" width="400px"> </a></li>
-        Sheet Music</li>
-        <a href="Contact.html"> <img src="../WebTech/Classwork/Images/mailbox.png" alt="Contact Us" title="Contact Us"
-                        height="50px" width="50px"> </a></li>
-        <a href="index.html"> <img src="../WebTech/Classwork/Images/home.jpg" alt="home" title="home" height="50px"
-                        width="50px"> </a></li>
 
-        <p>
-                “I, Owen Peterson, pledge my honor that I have neither received nor provided unauthorized assistance
-                        during the completion of this work. I have read the term project instructions and observed all
-                        the restrictions and limitations specified therein.”
+        <caption>Site Map</caption>
+        <h1>Musicians</h1>
+        <p><a id="const" href="Constantino Carrara.html">Constantino Carrara</a></p>
+        <p><a id="theorist" href="The Theorist.html">The Theorist</a></p>
+        <p><a id="lang" href="Lang Lang.html">Lang Lang</a></p>
+
+        <p onclick="change()" id="honorcode">
+                Honor Code
         </p>
 
 
-        <a href="Site Map.html" target="blank">Site Navigator</a></br>
-        <a href="Contact.html" target="blank"> Contact Us!</a>
+        <button><a class="button" href="Site Map.html" target="blank">Site Navigator</a></button>
+        <button><a class="button" href="Contact.html" target="blank"> Contact Us!</a></button>
 
 </body>
 

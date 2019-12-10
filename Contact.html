@@ -9,12 +9,25 @@
 </head>
 <link rel="stylesheet" href="style.css" type="text/css">
 <style>
-
+    /* body {
+        background-image: url("pianonotes.png");
+    } */
 
 
 
 
 </style>
+<script>
+    function Form() {
+        var contact = document.forms["myForm"]["last-name"].value;
+        var contact2 = document.forms["myForm"]["first-name"].value;
+        // include first name in here as well
+        if (contact || contact2 == "") {
+            alert("First and last name must be filled out");
+            return false;
+        }
+    }
+</script>
 
 <body>
     <!-- search bar -->
@@ -24,9 +37,9 @@
     <li> <a href="The Theorist.html"> The Theorist</a></li>
     <li> <a href="Lang Lang.html"> Lang Lang</a></li>
     <li> <a href="Contact.html"> Contact Us!</a> </li>
-</br>
+    </br>
     <h2>Send Us Your Feedback</h2>
-    <form method="POST" action="mailto:opeterson1@babson.edu">
+    <form name="myForm" ethod="POST" action="mailto:opeterson1@babson.edu" onsubmit="return Form()">
         <p>
             Last Name:
             <input type="text" name="last-name" size="10" maxlength="20" placeholder="Please enter your last name" />
@@ -37,15 +50,15 @@
         </p>
         <p>
             Gender:
-            Male<input type="radio" name="Gender">
-            Female<input type="radio" name="gender" value="F">
+            Male<input type="radio" name="gender" value="M" checked="checked">
+            Female<input type="radio" name="gender" value="F" checked="checked">
             Rather not say <input type="radio" name="gender" value="na" checked="checked">
         </p>
 
         <p>
             Favorite artists on the website
             <br>
-            <input type="checkbox" name="product" value="Constantino Carra" /> Constantino Carra
+            <input type="checkbox" name="product" value="Constantino Carrara" /> Constantino Carrara
             <input type="checkbox" name="product" value="The Theorist" /> The Theorist
             <input type="checkbox" name="product" value="Lang Lang" /> Lang Lang
             <input type="text" name="other" size="10" maxlength="50" placeholder="Other" />
@@ -55,13 +68,13 @@
             <input type="text" name="feedback" size="100" maxlength="500" />
         </p>
 
-        <button type="submit">Done</button>
+        <button type="submit" value="submit">Done</button>
         <button type="reset">Clear</button>
         </button>
     </form>
-</br>
-</br>
-</br>
+    </br>
+    </br>
+    </br>
     <button><a href="Site Map.html" target="blank">Site Navigator</a></button>
     <button><a href="Contact.html" target="blank"> Contact Us!</a></button>
 

@@ -38,8 +38,29 @@
         border: 1px solid white;
     }
 </style>
+<script>
+    const slides= [
+        "constantinoslideshow1.jpg",
+        "constantinoslideshow2.jpg",
+        "constantinoslideshow3.jpg",
+    ];
 
-<body>
+    let i = 0
+
+    function slideShow() {
+       let constantino = document.getElementById("Const");
+       if (i == slides.length) {
+                i = 0;
+                
+            }
+        constantino.src = slides[i];
+        i++;
+        setTimeout("slideShow()", 2000);
+    }
+    
+</script>
+
+<body onload="slideShow()">
     <!-- Search Bar -->
     <h1>Modern Piano Players.com</h1>
     <ul>
@@ -52,9 +73,9 @@
     </br>
     </br>
     <h1> Constantino Carrara</h1></br>
-    <div class="profile">
+    <div class="profile" >
         <img src="../WebTech/Classwork/Images/Constatino Carra.jpg" alt="Constantino" title="Constantino" height="500"
-            width="400">
+            width="400" id="Const">
         <h3> About the Composer</h3></br>
         <p>Costantino Carrara is an Italian pianist and composer. In 2011 he opens a YouTube channel just for fun, and
             he
