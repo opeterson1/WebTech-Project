@@ -6,43 +6,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Site Map</title>
+
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <style>
+                a {
+                        color: white;
+                }
+
+                a.nav {
+                        color: black;
+                }
+
+                a.nav:hover {
+                        background-color: black;
+                        color: white;
+                }
+
+                button:hover {
+                        color: white;
+
+                }
+
+                .button {
+                        color: black
+                }
+        </style>
+        <script>
+                function change() {
+                        let honor = document.getElementById("honorcode");
+                        honor.innerHTML = "I Owen Peterson pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work I have read the term project instructions and observed all the restrictions and limitations specified therein."
+                }
+        </script>
 </head>
-<link rel="stylesheet" href="style.css" type="text/css">
-<style>
-        a.nav,
-        a {
-                color: white;
-        }
-/* changes the text color and background when you hover over with the mouse */
-        a:hover {
-                background-color: white;
-                color: black;
-        }
-
-        /* change to background to black and text to white once you fix search bar */
-
-        a.button {
-                color: black;
-        }
-
-        
-</style>
-<script>
-        function change() {
-                let honor = document.getElementById("honorcode");
-                honor.innerHTML = "I Owen Peterson pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work I have read the term project instructions and observed all the restrictions and limitations specified therein."
-        }
-</script>
-
 
 <body>
         <!-- Search Bar -->
         <h1>Modern Piano Players.com</h1>
-        <li> <a class="nav" href="Index.html" target="blank"> Home</a></li>
-        <li> <a class="nav" href="Constantino Carrara.html" target="blank"> Constantino Carrara</a></li>
-        <li> <a class="nav" href="The Theorist.html" target="blank"> The Theorist</a></li>
-        <li> <a class="nav" href="Lang Lang.html" target="blank"> Lang Lang</a></li>
-        <li> <a class="nav" href="Contact.html" target="blank"> Contact Us!</a> </li>
+        <ul>
+                <li> <a class="nav" href="Index.html" target="blank"> Home</a></li>
+                <li> <a class="nav" href="Constantino Carrara.html" target="blank"> Constantino Carrara</a></li>
+                <li> <a class="nav" href="The Theorist.html" target="blank"> The Theorist</a></li>
+                <li> <a class="nav" href="Lang Lang.html" target="blank"> Lang Lang</a></li>
+                <li> <a class="nav" href="credits-page.html">Credits and Sheet Music</a></li>
+                <li> <a class="nav" href="Contact.html" target="blank"> Contact Us!</a> </li>
+        </ul>
         </br>
 
         <caption>Site Map</caption>
@@ -50,6 +57,8 @@
         <p><a id="const" href="Constantino Carrara.html">Constantino Carrara</a></p>
         <p><a id="theorist" href="The Theorist.html">The Theorist</a></p>
         <p><a id="lang" href="Lang Lang.html">Lang Lang</a></p>
+        <h1>Sheet Music</h1>
+        <p><a href="credits-page.html">Find the Sheet Music for all the Arists here</a></p>
         <!-- change the text to display the honor code on click -->
         <p onclick="change()" id="honorcode">
                 Honor Code

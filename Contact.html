@@ -6,51 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Us</title>
-</head>
+
+
 <link rel="stylesheet" href="style.css" type="text/css">
-<style>
-    /* body {
-        background-image: url("pianonotes.png");
-    } */
-
-
-
-
-</style>
 <script>
     function Form() {
-        var contact = document.forms["myForm"]["last-name"].value;
-        var contact2 = document.forms["myForm"]["first-name"].value;
+        let contact = document.forms["myForm"]["last-name"].value;
+        let contact2 = document.forms["myForm"]["first-name"].value;
         // include first name in here as well
-        if (contact || contact2 == "") {
+        if (contact == "" || contact2 == "") {
             alert("First and last name must be filled out");
             return false;
         }
     }
 </script>
+<style>
+    button:hover {
+        color: white;
+    }
 
+    a.nav {
+        color: black
+    }
+
+    a.nav:hover {
+        background-color: black;
+        color: white;
+    }
+</style>
+</head>
 <body>
     <!-- search bar -->
     <h1>Modern Piano Players.com</h1>
-    <li> <a href="Index.html"> Home</a></li>
-    <li> <a href="Constantino Carrara.html"> Constantino Carrara</a></li>
-    <li> <a href="The Theorist.html"> The Theorist</a></li>
-    <li> <a href="Lang Lang.html"> Lang Lang</a></li>
-    <li> <a href="Contact.html"> Contact Us!</a> </li>
+    <ul>
+        <li> <a class="nav" href="Index.html"> Home</a></li>
+        <li> <a class="nav" href="Constantino Carrara.html"> Constantino Carrara</a></li>
+        <li> <a class="nav" href="The Theorist.html"> The Theorist</a></li>
+        <li> <a class="nav" href="Lang Lang.html"> Lang Lang</a></li>
+        <li> <a class="nav" href="credits-page.html">Credits and Sheet Music</a></li>
+        <li> <a class="nav" href="Contact.html"> Contact Us!</a> </li>
+    </ul>
     </br>
     <h2>Send Us Your Feedback</h2>
     <!-- validation of form -->
     <form name="myForm" ethod="POST" action="mailto:opeterson1@babson.edu" onsubmit="return Form()">
         <p>
             Last Name:
-            <input type="text" name="last-name" size="10" maxlength="20" placeholder="Please enter your last name" />
+            <input type="text" name="last-name" size="25" maxlength="20" placeholder="Please enter your last name" />
         </p>
         <p>
             First Name:
-            <input type="text" name="first-name" size="10" maxlength="20" placeholder="Please enter your first name" />
+            <input type="text" name="first-name" size="25" maxlength="20" placeholder="Please enter your first name" />
         </p>
         <p>
-            Gender:
+            Gender:</br>
             Male<input type="radio" name="gender" value="M" checked="checked">
             Female<input type="radio" name="gender" value="F" checked="checked">
             Rather not say <input type="radio" name="gender" value="na" checked="checked">
@@ -62,7 +71,7 @@
             <input type="checkbox" name="product" value="Constantino Carrara" /> Constantino Carrara
             <input type="checkbox" name="product" value="The Theorist" /> The Theorist
             <input type="checkbox" name="product" value="Lang Lang" /> Lang Lang
-            <input type="text" name="other" size="10" maxlength="50" placeholder="Other" />
+            <input type="text" name="other" size="25" maxlength="50" placeholder="Other" />
         </p>
         <p>
             Give us some feedback!

@@ -6,65 +6,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Home</title>
+        <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <style>
+                .Constantino {
+                        display: none;
+                }
+
+                .Theorist {
+                        display: none;
+                }
+
+                .Lang {
+                        display: none;
+                }
+        </style>
+        <script type="text/javascript">
+
+                $(function () {
+                        $("area").mouseover(function () {
+                                $('.' + this.id).show();
+                        });
+                });
+
+
+        </script>
 </head>
-<link rel="stylesheet" href="style.css" type="text/css">
-<style>
-</style>
-<script>
 
-        let ConstVideo = [
-                <iframe id="Constantino1" width="560" height="315"
-                        src="https://www.youtube.com/embed/3ahg_eQZhxs" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>,
-                <iframe id="Constantino2" width="560" height="315"
-                        src="https://www.youtube.com/embed/9XrvWdUwbuw" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>,
-                <iframe id="Constantino3" width="560" height="315"
-                        src="https://www.youtube.com/embed/8Zu7SbF7b9s" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>,
-        ]
-        let TheoristVideo = [
-                <iframe id="Theorist1" width="560" height="315"
-                        src="https://www.youtube.com/embed/638C1o8Dgxk" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>,
-                <iframe id="Theorist2" width="560" height="315"
-                        src="https://www.youtube.com/embed/qhvysHYMl7U" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>,
-                <iframe id="Theorist3" width="560" height="315"
-                        src="https://www.youtube.com/embed/t5s0XMBdG7o" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>,
-        ]
-        let LangVideo = [
-                <iframe id="Lang1" width="560" height="315" src="https://www.youtube.com/embed/k9uatmMD9YU"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>,
-                <iframe id="Lang2" width="560" height="315" src="https://www.youtube.com/embed/5_OpPu6xilc"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>,
-                // <audio controls>
-                //         <source src="y2mate.com - lang_lang_beethoven_piano_concerto_no_5_aH63RKQ7OEw.mp3"
-                //                 type="audio/mpeg" controls="controls">
-                //                 </audio>
-
-        ]
-        function dropdown() {
-                document.getElementById
-
-        }
-
-        function reset() {
-
-
-        }
-</script>
 
 <body>
         <!-- Search Bar -->
@@ -74,23 +43,74 @@
                 <li> <a href="Constantino Carrara.html" target="blank"> Constantino Carrara</a></li>
                 <li> <a href="The Theorist.html" target="blank"> The Theorist</a></li>
                 <li> <a href="Lang Lang.html" target="blank"> Lang Lang</a></li>
+                <li> <a href="credits-page.html">Credits and Sheet Music</a></li>
                 <li> <a href="Contact.html" target="blank"> Contact Us!</a> </li>
+
         </ul>
         </br>
 
-        <!-- <map name="ConstantinoLangLangTheTheorist">
+        <map name="ConstantinoLangLangTheTheorist">
                 <area shape="rect" coords="180,65, 333,253" href="https://costantinocarrara.com/"
-                        alt="Constantino Carrara" title="Constantino Carrara">
+                        alt="Constantino Carrara" title="Constantino Carrara" id="Constantino">
                 <area shape="rect" coords="870,101, 1045,278" href="https://www.langlangofficial.com/" alt="Lang Lang"
-                        title="Lang Lang">
+                        title="Lang Lang" id="Lang">
                 <area shape="rect" coords="1609,243, 1745,358" href="https://www.thextheorist.com/" alt="The Theorist"
-                        title="The Theorist"></map> -->
+                        title="The Theorist" id="Theorist"></map>
 
 
-<!-- drop down animation occurs when you mouse over the picture -->
-        <img src="../WebTech/Classwork/Images/ConstantinoLangLangTheTheorist.JPG" width="100%"
-                usemap=#ConstantinoLangLangTheTheorist alt="Composers" title="Composers">
+        <!-- drop down animation occurs when you mouse over the map -->
+        <img src="ConstantinoLangLangTheTheorist.JPG" width="100%"
+                usemap=#ConstantinoLangLangTheTheorist alt="Composers" title="Composers" id="Composers">
+        <table>
+                <tr>
+                        <td><iframe class="Constantino" width="560" height="315"
+                                        src="https://www.youtube.com/embed/3ahg_eQZhxs" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe></td>
 
+                        <td><iframe class="Lang" width="560" height="315"
+                                        src="https://www.youtube.com/embed/k9uatmMD9YU" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe></td>
+                        <td><iframe class="Theorist" width="560" height="315"
+                                        src="https://www.youtube.com/embed/638C1o8Dgxk" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe></td>
+                </tr>
+
+                <tr>
+                        <td> <iframe class="Constantino" width="560" height="315"
+                                        src="https://www.youtube.com/embed/8Zu7SbF7b9s" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe></td>
+
+
+                        <td><audio class="Lang" controls>
+                                        <source src="y2mate.com - lang_lang_beethoven_piano_concerto_no_5_aH63RKQ7OEw.mp3"
+                                                type="audio/mpeg" controls="controls">
+                                </audio></td>
+                        <td><iframe class="Theorist" width="560" height="315"
+                                        src="https://www.youtube.com/embed/t5s0XMBdG7o" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe></td>
+                </tr>
+
+                <tr>
+                        <td><iframe class="Constantino" width="560" height="315"
+                                        src="https://www.youtube.com/embed/9XrvWdUwbuw" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe></td>
+
+                        <td><iframe class="Lang" width="560" height="315"
+                                        src="https://www.youtube.com/embed/5_OpPu6xilc" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe></td>
+                        <td> <iframe class="Theorist" width="560" height="315"
+                                        src="https://www.youtube.com/embed/qhvysHYMl7U" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe></td>
+                </tr>
+        </table>
 
         <button><a href="Site Map.html" target="blank">Site Navigator</a></button>
         <button><a href="Contact.html" target="blank"> Contact Us!</a></button>

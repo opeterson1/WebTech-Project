@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lang Lang</title>
-</head>
+
 <link rel="stylesheet" href="style.css" type="text/css">
 <style>
-
-
     img {
         float: left;
         padding-right: 80px;
@@ -43,7 +41,14 @@
 
     }
 </style>
+<script>
 
+    function changename() {
+        let him = document.getElementById("name");
+        him.style.fontStyle = "oblique";
+    }
+    </script>
+</head>
 <body>
     <!-- Search Bar -->
     <h1>Modern Piano Players.com</h1>
@@ -52,14 +57,15 @@
         <li> <a href="Constantino Carrara.html"> Constantino Carrara</a></li>
         <li> <a href="The Theorist.html"> The Theorist</a></li>
         <li> <a href="Lang Lang.html"> Lang Lang</a></li>
+        <li> <a href="credits-page.html">Credits and Sheet Music</a></li>
         <li> <a href="Contact.html"> Contact Us!</a> </li>
     </ul>
     </br>
     </br>
-    <h2> Lang Lang</h2>
+    <h2 id="name" onclick="changename()"> Lang Lang</h2>
     <div class="profile">
-        <img src="../WebTech/Classwork/Images/Lang Lang.jpg" alt="Lang Lang" title="Lang Lang" height="500"
-            width="700"></br>
+        <img src="Lang Lang.jpg" alt="Lang Lang" title="Lang Lang" height="500" width="700"
+            id="Lang"></br>
         <h3> About the Composer</h3></br>
         <p>Lang Lang started playing the piano aged three and by the age of five had given his first public recital. He
             entered Beijing’s Central Music Conservatory aged nine, and by the age of 13 had won first prize at the
@@ -108,12 +114,11 @@
         </p>
     </div>
     <h2>Popular Songs</h2>
-    <!-- fix first video -->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/6UMla4zYpoc" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZjaG05sa0f0" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</br>
+    </br>
     <iframe width="30%" height="300" scrolling="no" frameborder="no" allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281682996&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
     <iframe width="30%" height="300" scrolling="no" frameborder="no" allow="autoplay"
